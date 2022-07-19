@@ -36,6 +36,7 @@ public class DeleteOrg
 		String orgname="RoopaTm"+randomnumber;
 		System.out.println(orgname);
 		driver.findElement(By.xpath("//input[@name='accountname']")).sendKeys(orgname);
+		driver.findElement(By.xpath("//input[@name='accountname']")).sendKeys(orgname);
 		driver.findElement(By.xpath("//input[@accesskey='S']")).click();
 		Thread.sleep(1000);
 		driver.navigate().back();
