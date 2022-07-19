@@ -27,6 +27,7 @@ public class DeleteOrg
 		driver.navigate().to("http://localhost:8888");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("admin");
+		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("adm");
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("admin");
 		driver.findElement(By.xpath("//input[@value='Login' and @id='submitButton']")).click();
 		driver.findElement(By.xpath("//a[.='Organizations']")).click();
